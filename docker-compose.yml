@@ -1,13 +1,5 @@
 version: '3.8'
 
-volumes:
-  newlook:
-    name: newlook
-    driver: local
-    driver_opts:
-    device: /var/lib/docker/volumes/newlook/_data
-    o: bind
-    type: none
 
 networks:
   extsvcs:
@@ -22,7 +14,7 @@ services:
     ports:
       - "4242"
     volumes:
-      - newlook:/var/www/
+      - /var/lib/docker/volumes/newlook/_data:/var/www/
     networks:
       - extsvcs
     restart: always
