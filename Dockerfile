@@ -9,6 +9,7 @@ WORKDIR /var/www/
 
 COPY www/* /var/www/
 COPY config/server_config.toml /etc/sws/
+COPY tools/sws_install.sh /tmp/
 
 RUN cat /tmp/sws_install.sh | SWS_INSTALL_DIR="/usr/bin" sh
 
