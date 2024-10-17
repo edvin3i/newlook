@@ -1,0 +1,179 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.jumbotron p {
+    font-size: 2rem;
+}
+
+.working-hours {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.working-hours p {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.card {
+    background-color: #222;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#services, #contact {
+    background-color: #111;
+}
+
+.btn-primary {
+    background-color: #d3d3d3; /* Light gray color */
+    border-color: #d3d3d3;
+    color: #000; /* Black text for better contrast */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #bdbdbd; /* Slightly darker gray for hover state */
+    border-color: #bdbdbd;
+    color: #000;
+}
+
+footer {
+    background-color: #000 !important;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text:last-child {
+    margin-top: auto;
+    font-weight: bold;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .jumbotron {
+        height: 50vh;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #map {
+        height: 200px;
+    }
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* Add these styles at the end of the file */
+#gallery {
+    background-color: #111;
+}
+
+.gallery-img {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+#lightgallery a {
+    display: block;
+    overflow: hidden;
+}
+
+#lightgallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-link {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: #c19b2e;
+    text-decoration: underline;
+}
+
+/* Add this to your existing styles */
+@media (min-width: 768px) {
+    .last-two-services {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.social-link {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    color: #c19b2e;
+}
