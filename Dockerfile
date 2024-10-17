@@ -7,7 +7,7 @@ RUN apk update && apk upgrade && apk add --no-cache curl tar gzip && \
 
 WORKDIR /var/www/
 
-COPY www/* /var/www/
+COPY www/ /var/www/
 COPY config/server_config.toml /etc/sws/
 COPY tools/sws_install.sh /tmp/
 
