@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 
 
 networks:
@@ -13,8 +13,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "4249:4242"
-    volumes:
-      - /var/lib/docker/volumes/newlook/_data:/var/www/
     networks:
       - extsvcs
     restart: always
