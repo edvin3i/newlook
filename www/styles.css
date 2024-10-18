@@ -181,15 +181,21 @@ footer {
 /* Add these styles at the end of the file */
 @media (max-width: 991px) {
     .navbar-brand {
-        font-size: 1.2rem; /* Reduce font size for smaller screens */
+        font-size: 1.2rem;
+        max-width: 70%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .navbar-toggler {
-        padding: 0.25rem 0.5rem; /* Reduce padding of the toggle button */
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
     }
 
-    .navbar > .container {
-        justify-content: space-between; /* Ensure space between brand and toggle */
+    .navbar > .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .navbar-collapse {
@@ -215,5 +221,6 @@ footer {
 @media (max-width: 350px) {
     .navbar-brand {
         font-size: 1rem;
+        max-width: 60%;
     }
 }
