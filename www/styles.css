@@ -182,19 +182,15 @@ footer {
 /* Add these styles at the end of the file */
 @media (max-width: 991px) {
     .navbar {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .navbar-top {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
     }
 
     .navbar-brand {
         font-size: 1.2rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        max-width: 70%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .navbar-toggler {
@@ -203,13 +199,17 @@ footer {
     }
 
     .navbar > .container-fluid {
-        flex-direction: column;
-        padding-left: 15px;
-        padding-right: 15px;
+        flex-wrap: nowrap;
     }
 
     .navbar-collapse {
-        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1rem;
+        z-index: 1000;
     }
 
     .navbar-nav {
@@ -219,15 +219,19 @@ footer {
     .nav-item {
         text-align: center;
     }
-
-    .navbar-spacer {
-        width: 40px; /* Adjust this value to match the width of your toggle button */
-    }
 }
 
 /* Further adjustments for very small screens */
 @media (max-width: 350px) {
     .navbar-brand {
         font-size: 1rem;
+        max-width: 60%;
+    }
+}
+
+/* Adjust the top padding of the main content to accommodate the navbar on mobile */
+@media (max-width: 991px) {
+    body {
+        padding-top: 60px; /* Adjust this value as needed */
     }
 }
