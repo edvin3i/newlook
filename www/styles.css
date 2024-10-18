@@ -177,3 +177,43 @@ footer {
 .social-link:hover {
     color: #c19b2e;
 }
+
+/* Add these styles at the end of the file */
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem; /* Reduce padding of the toggle button */
+    }
+
+    .navbar > .container {
+        justify-content: space-between; /* Ensure space between brand and toggle */
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .navbar-nav {
+        margin-top: 0.5rem;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 350px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
